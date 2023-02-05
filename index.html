@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="watch-holder">
+
+            <!--STRUCTURING THE ABSOLUTE CONTAINER-->
+            <div class="alarm-cont">
+                <div class="alarm-mini">
+                    <audio src="http://drive.google.com/uc?export=view&id=1u0bn_zPhhk51CK_Xo5mE6Rgrhe9kKZul"  class="ringtone"></audio>
+                <p>It's time</p>
+                <div class="alarm-contt">
+                    <span class="alarm-im"></span>
+                </div>
+                <div class="btn-cont">
+                <button class="snooze">Snooze</button>
+                <button class="stop">Stop</button>
+                </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <p class="set-alarm">Alarm Project</p>
+            <p class="alarm-alert">Alarm Alert</p>
+
+            <form id="myForm" onsubmit="return inputValidity()">
+            <div class="watch-cont">
+                
+                <span class="time"><input type="number"  placeholder="00" onkeyup="checkUserInput()" id="hours"></span>
+                <span class="tim">:</span>
+                <span class="time"><input type="number" placeholder="00" id="minutes" onkeyup="checkUserInput()" ></span>
+                <span class="tim">:</span>
+                <span class="am-pm">Hrs</span>
+                <button class="SetAlarm">Set Alarm</button>
+            
+            </div>
+        </form>
+      
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
